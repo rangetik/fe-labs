@@ -1,0 +1,60 @@
+.images {
+  display: flex;
+  gap: 80px;
+}
+
+/* корпус світлофора (спільний для обох) */
+.tl-pos,
+.tl-tr {
+  width: 80px;
+  height: 200px;
+  background-color: #d9d9d9;
+  border: 3px solid #555555;
+  border-radius: 16px;
+}
+
+/* лампа (спільне для обох) */
+.light {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+}
+.red {
+  background-color: #ff0000;
+}
+.yellow {
+  background-color: #ffff00;
+}
+.green {
+  background-color: #00b050;
+}
+
+/* 1. Через position */
+.tl-pos {
+  position: relative;
+}
+.tl-pos .light {
+  position: absolute;
+  left: 13px;
+}
+.tl-pos .red {
+  top: 10px;
+}
+.tl-pos .yellow {
+  top: 73px;
+}
+.tl-pos .green {
+  top: 136px;
+}
+
+/* 2. Через transform: лампи стоять одна під одною, зсуваємо їх translate() */
+.tl-tr .red {
+  transform: translate(13px, 10px);
+}
+.tl-tr .yellow {
+  transform: translate(13px, 19px);
+}
+.tl-tr .green {
+  transform: translate(13px, 28px);
+}

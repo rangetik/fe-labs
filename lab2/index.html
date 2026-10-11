@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Лабораторна робота №2: таблиці в HTML5 та зображення засобами CSS3"
+    >
+    <meta
+      name="keywords"
+      content="HTML5, CSS3, таблиця, rowspan, colspan, position, transform"
+    >
+    <title>Жила І. Д., ІМ-42, ЛР №2, варіант 1</title>
+    <link rel="stylesheet" href="style.css" >
+    <style>
+      table {
+        border-collapse: collapse;
+        table-layout: fixed;
+        width: 700px;
+      }
+      .wide {
+        width: 25%;
+      }
+      .narrow {
+        width: 12.5%;
+      }
+      td {
+        border: 2px solid #555555;
+        height: 40px;
+        padding: 4px 8px;
+        font-size: 18px;
+      }
+      /* 1-й рядок: #nn8f8f, nn = 01 */
+      .row1 td {
+        background-color: #018f8f;
+        color: #000000;
+      }
+      /* 2-й рядок: #f5f5nn, nn = 01 */
+      .row2 td {
+        background-color: #f5f501;
+        color: #0101f5;
+      }
+      /* при наведенні кольори міняються на протилежні */
+      .row1:hover td {
+        background-color: #000000;
+        color: #018f8f;
+      }
+      .row2:hover td {
+        background-color: #0101f5;
+        color: #f5f501;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Лабораторна робота 2</h1>
+
+    <h2>Завдання 1. Таблиця</h2>
+    <table>
+      <colgroup>
+        <col class="wide" >
+        <col class="wide" >
+        <col class="wide" >
+        <col class="narrow" >
+        <col class="narrow" >
+      </colgroup>
+      <tbody class="row1">
+        <tr>
+          <td colspan="2" rowspan="2">Жила</td>
+          <td>Іван</td>
+          <td rowspan="2"></td>
+          <td rowspan="2"></td>
+        </tr>
+        <tr>
+          <td>Дмитрович</td>
+        </tr>
+      </tbody>
+      <tbody class="row2">
+        <tr>
+          <td>ІМ-42</td>
+          <td rowspan="2">ЛР-2</td>
+          <td rowspan="2">Варіант 1</td>
+          <td colspan="2" rowspan="2"></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Завдання 2. Світлофор</h2>
+    <div class="images">
+      <div>
+        <p>За допомогою position</p>
+        <div class="tl-pos">
+          <div class="light red"></div>
+          <div class="light yellow"></div>
+          <div class="light green"></div>
+        </div>
+      </div>
+      <div>
+        <p>За допомогою transform</p>
+        <div class="tl-tr">
+          <div class="light red"></div>
+          <div class="light yellow"></div>
+          <div class="light green"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
