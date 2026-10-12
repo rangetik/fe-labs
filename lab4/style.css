@@ -1,0 +1,21 @@
+body {
+  font-family: "Times New Roman", serif;
+  margin: 20px;
+}
+
+#fullname,
+.birth {
+  cursor: pointer;
+}
+
+#images img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.buttons button {
+  padding: 6px 14px;
+  margin-right: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
