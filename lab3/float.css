@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.header,
+.footer,
+.left,
+.right {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header,
+.footer {
+  background-color: #239ec6;
+}
+
+.left {
+  background-color: #9191fb;
+}
+
+.right {
+  background-color: #ade4f6;
+}
+
+.switch {
+  text-align: center;
+}
+
+/* верстка через float */
+.header,
+.footer {
+  height: 80px;
+  line-height: 80px;  /* текст по центру по вертикалі */
+  text-align: center;
+}
+
+.left,
+.right {
+  float: left;
+  width: 50%; 
+  height: 280px;
+  padding: 120px 0 0 30px;
+  box-sizing: border-box;
+}
+
+.footer {
+  clear: both;
+}
