@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fe-labs/lab7/my-app/build/static/css/main.dd0aa63f.css",
+    "main.js": "/fe-labs/lab7/my-app/build/static/js/main.a41577ff.js",
+    "index.html": "/fe-labs/lab7/my-app/build/index.html",
+    "main.dd0aa63f.css.map": "/fe-labs/lab7/my-app/build/static/css/main.dd0aa63f.css.map",
+    "main.a41577ff.js.map": "/fe-labs/lab7/my-app/build/static/js/main.a41577ff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd0aa63f.css",
+    "static/js/main.a41577ff.js"
+  ]
+}
