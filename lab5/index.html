@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Лабораторна робота №5: події JavaScript та регулярні вирази">
+    <meta name="keywords" content="JavaScript, події, регулярні вирази, валідація форми">
+    <title>Жила І. Д., ІМ-42, ЛР-5, варіант 41</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Лабораторна робота 5</h1>
+
+    <h2>Завдання 1. Перевірка даних форми</h2>
+    <div class="task1">
+      <form id="form" class="form">
+        <h3>Форма для заповнення</h3>
+        <input type="text" id="pib" placeholder="ПІБ (Жила І.Д.)">
+        <input type="text" id="phone" placeholder="Телефон ((099)-123-45-67)">
+        <input type="text" id="faculty" placeholder="Факультет (ФІОТ)">
+        <input type="text" id="birth" placeholder="Дата народження (01.06.2007)">
+        <input type="text" id="address" placeholder="Адреса (м. Київ)">
+        <button type="submit">Підтвердити</button>
+      </form>
+
+      <div id="result" class="result">
+        <h3>Введені дані</h3>
+        <p><b>ПІБ:</b> <span id="r-pib"></span></p>
+        <p><b>Телефон:</b> <span id="r-phone"></span></p>
+        <p><b>Факультет:</b> <span id="r-faculty"></span></p>
+        <p><b>Дата народження:</b> <span id="r-birth"></span></p>
+        <p><b>Адреса:</b> <span id="r-address"></span></p>
+      </div>
+    </div>
+
+    <h2>Завдання 2. Події на клітинці таблиці</h2>
+    <input type="color" id="palette" value="#ff0000">
+    <table id="grid"></table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
